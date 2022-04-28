@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TaskItemComponent } from './task-item/task-item.component';
-import { TaskDetailComponent } from './task-detail/task-detail.component';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAnalytics,getAnalytics,ScreenTrackingService,UserTrackingService } from '@angular/fire/analytics';
@@ -16,16 +15,15 @@ import { provideMessaging,getMessaging } from '@angular/fire/messaging';
 import { providePerformance,getPerformance } from '@angular/fire/performance';
 import { provideRemoteConfig,getRemoteConfig } from '@angular/fire/remote-config';
 import { provideStorage,getStorage } from '@angular/fire/storage';
-import { TaskListComponent } from './task-list/task-list.component';
 import { TopNavBarComponent } from './top-nav-bar/top-nav-bar.component';
 import { FormsModule } from '@angular/forms';
+import { TaskListComponent } from './task-list/task-list.component';
 @NgModule({
   declarations: [
     AppComponent,
-    TaskItemComponent,
-    TaskDetailComponent,
-    TaskListComponent,
     TopNavBarComponent,
+    TaskListComponent,
+    TaskItemComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,12 +1,17 @@
+import { FormsModule } from '@angular/forms';
+import { TaskDetailComponent } from './task-detail.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TaskDetailRoutingModule } from './task-detail.routing.module';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [TaskDetailComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    TaskDetailRoutingModule,
+    FormsModule
   ]
 })
 export class TaskDetailModule { }
